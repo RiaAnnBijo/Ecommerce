@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="p-2"></div>
+
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://st2.depositphotos.com/1691353/6292/i/450/depositphotos_62928267-stock-photo-minimalistic-cup-on-tray.jpg"
+                    class="card-img-top" alt="Simple White Classy Mug" style="height: 225px;">
+                <div class="card-body">
+                    <p class="card-text">Simple white classy mug</p>
+                    <p class="card-text">Price: $10.00</p>
+                    <div class="d-flex justify-content-between">
+                        <button onclick="addToCart('Simple white classy mug', 10.00, 'simpleWhiteMug')"
+                            class="btn btn-primary">Add to Cart</button>
+                        <div class="d-flex align-items-center">
+                            <button onclick="decrementQuantity('simpleWhiteMug')"
+                                class="btn btn-sm btn-outline-secondary">-</button>
+                            <span id="simpleWhiteMugQuantity">0</span>
+                            <button onclick="incrementQuantity('simpleWhiteMug')"
+                                class="btn btn-sm btn-outline-secondary">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Watch -->
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D"
+                    class="card-img-top" alt="Slim Stylish White Watch" style="height: 225px;">
+                <div class="card-body">
+                    <p class="card-text">Slim stylish white watch</p>
+                    <p class="card-text">Price: $30.50</p>
+                    <div class="d-flex justify-content-between">
+                        <button onclick="addToCart('Slim stylish white watch', 30.50, 'WhiteWatch')"
+                            class="btn btn-primary">Add to Cart</button>
+                        <div class="d-flex align-items-center">
+                            <button onclick="decrementQuantity('WhiteWatch')"
+                                class="btn btn-sm btn-outline-secondary">-</button>
+                            <span id="WhiteWatchQuantity">0</span>
+                            <button onclick="incrementQuantity('WhiteWatch')"
+                                class="btn btn-sm btn-outline-secondary">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Water Bottle -->
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.speck-sports.com/52711-thickbox_default/hydro-flask-bottle-20oz-wide-mouth.jpg"
+                    class="card-img-top" alt="Portable Water Bottle" style="height: 225px;">
+                <div class="card-body">
+                    <p class="card-text">Portable water bottle</p>
+                    <p class="card-text">Price: $18.99</p>
+                    <div class="d-flex justify-content-between">
+                        <button onclick="addToCart('Portable water bottle', 18.99, 'waterBottle')"
+                            class="btn btn-primary">Add to Cart</button>
+                        <div class="d-flex align-items-center">
+                            <button onclick="decrementQuantity('waterBottle')"
+                                class="btn btn-sm btn-outline-secondary">-</button>
+                            <span id="waterBottleQuantity">0</span>
+                            <button onclick="incrementQuantity('waterBottle')"
+                                class="btn btn-sm btn-outline-secondary">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <div class="p-2"></div>
+
+  <div class="row">
+    <!-- Camera -->
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://i.rtings.com/assets/products/82JAifSq/canon-eos-rebel-sl3/design-small.jpg"
+                    class="card-img-top" alt="Black Compact Camera" style="height: 225px;">
+                <div class="card-body">
+                    <p class="card-text">Black compact camera, red neck strap included</p>
+                    <p class="card-text">Price: $140.45</p>
+                    <div class="d-flex justify-content-between">
+                        <button onclick="addToCart('Black compact camera', 140.45, 'compactCamera')"
+                            class="btn btn-primary">Add to Cart</button>
+                        <div class="d-flex align-items-center">
+                            <button onclick="decrementQuantity('compactCamera')"
+                                class="btn btn-sm btn-outline-secondary">-</button>
+                            <span id="compactCameraQuantity">0</span>
+                            <button onclick="incrementQuantity('compactCamera')"
+                                class="btn btn-sm btn-outline-secondary">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Essential Oil -->
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://ecomodernessentials.com.au/cdn/shop/products/Australian-Lavender-Pure-Essential-Oil.jpg?v=1652765768"
+                    class="card-img-top" alt="Lavender Calming Essential Oil" style="height: 225px;">
+                <div class="card-body">
+                    <p class="card-text">Lavender calming essential oil</p>
+                    <p class="card-text">Price: $13.55</p>
+                    <div class="d-flex justify-content-between">
+                        <button onclick="addToCart('Lavender calming essential oil', 13.55, 'lavenderOil')"
+                            class="btn btn-primary">Add to Cart</button>
+                        <div class="d-flex align-items-center">
+                            <button onclick="decrementQuantity('lavenderOil')"
+                                class="btn btn-sm btn-outline-secondary">-</button>
+                            <span id="lavenderOilQuantity">0</span>
+                            <button onclick="incrementQuantity('lavenderOil')"
+                                class="btn btn-sm btn-outline-secondary">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bundle -->
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/sagacity/image/upload/c_crop,h_1894,w_2278,x_175,y_381/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/PCM-WS21-044-Covet-Zen-Products_qaxrdg.jpg"
+                    class="card-img-top" alt="3 Item Bundle of Self Care Products" style="height: 225px;">
+                <div class="card-body">
+                    <p class="card-text">3 item bundle of self-care products</p>
+                    <p class="card-text">Price: $250.45</p>
+                    <div class="d-flex justify-content-between">
+                        <button onclick="addToCart('Self-care bundle', 250.45, 'selfCareBundle')"
+                            class="btn btn-primary">Add to Cart</button>
+                        <div class="d-flex align-items-center">
+                            <button onclick="decrementQuantity('selfCareBundle')"
+                                class="btn btn-sm btn-outline-secondary">-</button>
+                            <span id="selfCareBundleQuantity">0</span>
+                            <button onclick="incrementQuantity('selfCareBundle')"
+                                class="btn btn-sm btn-outline-secondary">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <div class="p-2"></div>
+
+  <div class="row">
+            <!-- Toothbrush -->
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://media.istockphoto.com/id/1216291602/photo/new-eco-and-bamboo-toothbrush-with-black-nylon-bristles.jpg?s=612x612&w=0&k=20&c=2hRTrVgUkXlHM4ygIMzcNe4XafKOTNyRt9wcNuf9e0c="
+                    class="card-img-top" alt="Toothbrush" style="height: 225px;">
+                <div class="card-body">
+                    <p class="card-text">Toothbrush</p>
+                    <p class="card-text">Price: $8.55</p>
+                    <div class="d-flex justify-content-between">
+                        <button onclick="addToCart('Toothbrush', 8.55, 'toothbrush')"
+                            class="btn btn-primary">Add to Cart</button>
+                        <div class="d-flex align-items-center">
+                            <button onclick="decrementQuantity('toothbrush')"
+                                class="btn btn-sm btn-outline-secondary">-</button>
+                            <span id="toothbrushQuantity">0</span>
+                            <button onclick="incrementQuantity('toothbrush')"
+                                class="btn btn-sm btn-outline-secondary">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Makeup Brushes -->
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://hokdistributors.com/cdn/shop/products/13872927-1964964567974224.webp?v=1678101623"
+                    class="card-img-top" alt="Set of Makeup Brushes" style="height: 225px;">
+                <div class="card-body">
+                    <p class="card-text">Set of makeup brushes</p>
+                    <p class="card-text">Price: $120.85</p>
+                    <div class="d-flex justify-content-between">
+                        <button onclick="addToCart('Makeup Brushes', 120.85, 'makeupBrushes')"
+                            class="btn btn-primary">Add to Cart</button>
+                        <div class="d-flex align-items-center">
+                            <button onclick="decrementQuantity('makeupBrushes')"
+                                class="btn btn-sm btn-outline-secondary">-</button>
+                            <span id="makeupBrushesQuantity">0</span>
+                            <button onclick="incrementQuantity('makeupBrushes')"
+                                class="btn btn-sm btn-outline-secondary">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Headphones -->
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://sony.scene7.com/is/image/sonyglobalsolutions/wh-ch720_blue03_D?$productshotPreset$&fmt=png-alpha&wid=515&hei=515"
+                    class="card-img-top" alt="Blue Headphones" style="height: 225px;">
+                <div class="card-body">
+                    <p class="card-text">Blue Headphones</p>
+                    <p class="card-text">Price: $300.99</p>
+                    <div class="d-flex justify-content-between">
+                        <button onclick="addToCart('Blue Headphones', 300.99, 'headphones')"
+                            class="btn btn-primary">Add to Cart</button>
+                        <div class="d-flex align-items-center">
+                            <button onclick="decrementQuantity('headphones')"
+                                class="btn btn-sm btn-outline-secondary">-</button>
+                            <span id="headphonesQuantity">0</span>
+                            <button onclick="incrementQuantity('headphones')"
+                                class="btn btn-sm btn-outline-secondary">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="amount" id="cartContainer">
+        <ul id="cartList"></ul>
+        <p>Total Amount: $<span id="totalAmount">0.00</span></p>
+    </div>
+    
+    <!-- View Cart button -->
+    <div class="me-5 d-none d-lg-block">
+        <span><button onclick="updateCartDisplay()">View Cart</button></span>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
